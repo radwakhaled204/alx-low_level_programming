@@ -1,2 +1,10 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o `echo $CFILE | cut -d. -f1`  .s 
+
+# Get the C file name from the variable $CFILE
+c_file="$CFILE"
+
+# Prepare the output file name by replacing the extension with .s
+output_file="${c_file%.c}.s"
+
+# Generate the assembly code using the gcc compiler with Intel syntax
+gcc -S -masm=intel "$c_file" -o "$output_file" 
