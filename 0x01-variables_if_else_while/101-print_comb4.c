@@ -15,7 +15,7 @@ int main(void)
 	while (num1 <= 9)
 	{
 		num2 = 0;
-		while (num <= 9)
+		while (num2 <= 9)
 		{
 			num3 = 0;
 			while (num3 <= 9)
@@ -35,7 +35,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				num3++
+				num3++;
 			}
 			num2++;
 		}
