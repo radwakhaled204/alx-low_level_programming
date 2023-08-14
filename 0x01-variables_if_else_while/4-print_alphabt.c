@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: print alphabet
+ * Description: print alphabet expect two char
  *
  * Return: 0 (Success)
 */
