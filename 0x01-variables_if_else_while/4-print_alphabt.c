@@ -9,14 +9,14 @@
 */
 int main(void)
 {
-	char alpha = 'a';
+	char i;
 
-	while (alpha <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (alpha == 'e' || alpha == 'q')
-			alpha++;
+		if (i == 'e' || i == 'q')
+			continue;
 		putchar(alpha);
-		alpha++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
