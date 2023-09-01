@@ -9,13 +9,12 @@
 */
 int main(void)
 {
-	char alpha = 'a';
+	char i;
 	char ALPHA = 'A';
 
-	while ( alpha <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(alpha);
-		alpha++;
+		putchar(i);
 	}
 
 	/*UPPERCASE*/
