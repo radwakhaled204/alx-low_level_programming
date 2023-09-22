@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-/*
+/**
  * struct dog - A struct contain information about dog.
  * @name: first char represent name.
  * @owner: second char represent owner.
