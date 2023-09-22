@@ -4,17 +4,18 @@
 #include <stdio.h>
 
 /*
- * struct dog - a new type define struct dog.
+ * struct dog - A struct contain information about dog.
  * @name: first char represent name.
  * @owner: second char represent owner.
  * @age: A float represent age.
  */
-
 struct dog
 {
 	char *name;
 	char *owner;
 	float age;
 };
+
+typedef struct dog td_dog;
 
 #endif
