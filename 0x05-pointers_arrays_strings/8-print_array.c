@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_array -  a function that prints n elements of an array of integer.
- * @a: array of integers
+ * print_array -  a function that prints n elements.
+ * @a: array.
  * @n: number of elements.
  */
 
 void print_array(int *a, int n)
 {
-	int i;
+	int x;
 
-	for (i = 0 ; i < n ; i++)
+	for (x = 0 ; x < n ; x++)
 	{
-		printf("%d", a[i]);
-		if (i != (n - 1))
+		printf("%d", a[x]);
+		if (x != (n - 1))
 			printf(", ");
 	}
 	printf("\n");
