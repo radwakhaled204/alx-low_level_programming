@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
+#include <stdlib.h>
+
 
 /**
- * main -  prints its name, followed by a new line.
+ * main -  prints its name.
  * @argc: argument count.
  * @argv: argument vector.
  * Return: 1 if error otherwise 0.
@@ -11,31 +12,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i, num, sum = 0;
+	int n, s = 0;
 
-	for (i = 1; i < argc; i++)
-	{
-		char *arg = argv[i];
+    for (int x = 1; x < argc; x++) {
+        char *arg = argv[x];
+        int j = 0;
 
-		while (*arg)
-		{
-			if (!isdigit(*arg))
-			{
-				printf("Error\n");
-				return (1);
-			}
+        while (arg[j]) {
+            if (!isdigit(arg[j])) {
+                printf("Error\n");
+                return 1;
+            }
+            j++;
+        }
 
-			arg++;
-		}
+        n = atoi(arg);
 
-		num = atoi(argv[i]);
+        if (n > 0) {
+            s += n;
+        }
+    }
 
-		if (num > 0)
-		{
-			sum += num;
-		}
-	}
-
-	printf("%d\n", sum);
-	return (0);
+    printf("%d\n", s);
+    return 0;
 }
