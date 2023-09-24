@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main -  prints its name, followed by a new line.
+ * main -  prints its name.
  * @argc: argument count.
  * @argv: argument vector.
  * Return: 1 if error otherwise 0.
@@ -10,17 +10,17 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int x, y, z;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	z = x * y;
 
-	printf("%d\n", result);
+	printf("%d\n", z);
 	return (0);
 }
