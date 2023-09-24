@@ -2,18 +2,17 @@
 #include <stdlib.h>
 
 /**
- * main -  prints its name, followed by a new line.
+ * main -  prints its name.
  * @argc: argument count.
  * @argv: argument vector.
- * Return: 0.
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int x;
 
-	for (i = 0; i < argc; i++)
-		printf("%s\n", argv[i]);
+	for (x = 0; x < argc; x++)
+		printf("%s\n", argv[x]);
 
 	return (0);
 }
