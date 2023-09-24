@@ -17,6 +17,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	/**
+	* atoi - is representation of a number (in ASCII) into an integer value.
+	*/
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
 	z = x * y;
